@@ -108,8 +108,12 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 {
    hInst = hInstance; // 인스턴스 핸들을 전역 변수에 저장합니다.
 
+   RECT rc = { 0,0, WinCX, WinCY };
+
+   AdjustWindowRect(&rc, WS_OVERLAPPEDWINDOW, FALSE);
+	
    HWND hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
-      CW_USEDEFAULT, 0, WinCX, WinCY, nullptr, nullptr, hInstance, nullptr);
+	   CW_USEDEFAULT, 0, rc.right - -rc.left, rc.bottom - rc.top, nullptr, nullptr, hInstance, nullptr);
 
    if (!hWnd)
    {
@@ -154,18 +158,20 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		if (!g_tArea.bStart)
 		{
 			g_tArea.bStart = true;
-			g_tArea.ptStart.x = lParam & 0x0000ffff;
-			g_tArea.ptStart.y = lParam >>16;
-			//g_tArea.ptStart.y 
+			g_tArea.ptStart.x = LOWORD(lParam);
+			g_tArea.ptStart.y = HIWORD(lParam);
 
 		}
 	}
 		break;
 	case WM_LBUTTONUP:
 	{
-		g_tArea.bStart = false;
-		g_tArea.ptEnd.x = lParam & 0x0000ffff;
-		g_tArea.ptEnd.y = lParam >> 16;
+		if (g_tArea.bStart)
+		{
+			g_tArea.bStart = false;
+			g_tArea.ptEnd.x = LOWORD(lParam);
+			g_tArea.ptEnd.y = HIWORD(lParam);
+		}
 
 	}
 	break;

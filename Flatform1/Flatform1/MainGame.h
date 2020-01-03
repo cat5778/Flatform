@@ -12,6 +12,7 @@ public:
 	
 private:
 	HDC m_hdc;
+	ObjectList m_objlist;
 
 };
 

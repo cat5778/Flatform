@@ -23,7 +23,7 @@
 #include <iostream>
 #include <cmath>
 #include <ctime>
-
+#include <list>
 
 // Userheaders
 using namespace std;
@@ -31,6 +31,6 @@ using namespace std;
 #include "Enum.h"
 #include "Struct.h"
 #include "Extern.h"
-
+#include "Typedef.h"
 
 

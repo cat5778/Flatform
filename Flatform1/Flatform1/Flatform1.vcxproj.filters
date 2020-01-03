@@ -16,15 +16,15 @@
     <Filter Include="01.GameMain">
       <UniqueIdentifier>{00e29cc5-8919-4074-b8d1-03fec0e364c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="10.GameObject\01.Player">
+      <UniqueIdentifier>{9a5bf6e3-ae11-4dbc-80a6-7e34310adb7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>98.Headers</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>99.Default</Filter>
-    </ClInclude>
-    <ClInclude Include="Flatform1.h">
       <Filter>99.Default</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
@@ -45,16 +45,34 @@
     <ClInclude Include="Extern.h">
       <Filter>98.Headers</Filter>
     </ClInclude>
+    <ClInclude Include="Flatform1.h">
+      <Filter>00.WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>10.GameObject\01.Player</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>10.GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Typedef.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>99.Default</Filter>
     </ClCompile>
-    <ClCompile Include="Flatform1.cpp">
-      <Filter>99.Default</Filter>
-    </ClCompile>
     <ClCompile Include="MainGame.cpp">
       <Filter>01.GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Flatform1.cpp">
+      <Filter>00.WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>10.GameObject\01.Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>10.GameObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

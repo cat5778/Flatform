@@ -6,7 +6,12 @@ typedef struct _tagArea
 	POINT ptStart;
 	POINT ptEnd;
 }TagArea;
+typedef struct Info
+{
+	float fPosX, fPosY;
+	float fCX, fCY;
 
+}INFO;
 
 
 #define __STRUCT_H__
