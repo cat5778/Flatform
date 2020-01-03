@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="00.WinMain">
+      <UniqueIdentifier>{0d3880d2-e852-425a-bc24-6317369278ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Default">
+      <UniqueIdentifier>{44735276-8c71-4377-964d-19b0ceed0582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Headers">
+      <UniqueIdentifier>{ed87c8d7-8a03-4ffe-ad95-052eef1dc2d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10.GameObject">
+      <UniqueIdentifier>{3909c8a7-dd92-422c-8b7b-401fb404fd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameMain">
+      <UniqueIdentifier>{00e29cc5-8919-4074-b8d1-03fec0e364c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Flatform1.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>01.GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Extern.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>99.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Flatform1.cpp">
+      <Filter>99.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>01.GameMain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Flatform1.ico">
+      <Filter>99.Default</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>99.Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Flatform1.rc">
+      <Filter>99.Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>99.Default</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
